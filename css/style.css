@@ -1,0 +1,177 @@
+*{
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+}
+
+.wrapper {
+    max-width: 940px;
+    margin: auto;
+    padding: 10px;
+}
+
+.wrapper a:link,
+.wrapper a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+header div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li{ 
+    display: inline-block;
+    list-style-type: none;
+    margin: 10px;
+}
+
+#hero {
+    display: flex;
+    height: 600px;
+    background-image: url(../images/hands-typing.jpg);
+    background-size: cover;
+    background-position: center;
+
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    max-width: 60%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-shadow: #000 2px 2px;
+    text-align: center;  
+}
+
+
+#about-me .wrapper {
+    max-width: 940px;
+   
+    display: flex;
+    align-items: center;
+}
+
+#about-me .info{
+    width: 60%
+}
+
+#about-me img{
+    width: 40%;
+    align-self: end;
+}
+
+
+#services .wrapper {
+    max-width: 940px;
+    align-items: center;
+
+    background-color: #fafafa;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.grid article {
+    padding: 1em;
+    background-color: #fff;
+    align-items: center;
+}
+.grid article {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.grid article .btn{
+    text-align: left;
+    margin-right: auto;
+}
+
+.grid article {
+    text-align: left;    
+}
+
+.grid a:link,
+.grid a:visited{
+    display: flex;
+    padding: .8em 1em;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #000;
+    border-radius: 4px;
+    justify-content: left;
+    margin-top: auto;
+}
+
+
+#work .wrapper {
+    max-width: 940px;
+    align-items: center;
+    text-align: center;
+}
+
+#work h2 p {
+    max-width: 940px;
+    margin: auto;
+    text-align: center;
+}
+
+#work .vent {
+    display: grid;
+    align-content: center;
+
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    grid-template-areas: 
+     "p1 p1 p1 p2 p2 p2"
+     "p3 p3 p4 p4 p5 p5"
+    ;
+
+    padding-bottom: 40px;
+}
+
+.vent img:nth-child(1) {
+    grid-area: p1;
+}
+
+.vent img:nth-child(2) {
+    grid-area: p2;
+}
+
+.vent img:nth-child(3) {
+    grid-area: p3;
+}
+
+.vent img:nth-child(4) {
+    grid-area: p4;
+}
+
+.vent img:nth-child(5) {
+    grid-area: p5;
+}
+
+
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
